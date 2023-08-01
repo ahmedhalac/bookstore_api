@@ -31,3 +31,13 @@
 /Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore_API/obj/Debug/net7.0/BookStore_API.pdb
 /Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore_API/obj/Debug/net7.0/BookStore_API.genruntimeconfig.cache
 /Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore_API/obj/Debug/net7.0/ref/BookStore_API.dll
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore_API/bin/Debug/net7.0/Humanizer.dll
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore_API/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore_API/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore_API/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore_API/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore_API/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore_API/bin/Debug/net7.0/Mono.TextTemplating.dll
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore_API/bin/Debug/net7.0/Npgsql.dll
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore_API/bin/Debug/net7.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore_API/bin/Debug/net7.0/System.CodeDom.dll
