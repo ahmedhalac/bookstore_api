@@ -1,0 +1,12 @@
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore.Utility/bin/Debug/net7.0/BookStore.Utility.deps.json
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore.Utility/bin/Debug/net7.0/BookStore.Utility.dll
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore.Utility/bin/Debug/net7.0/BookStore.Utility.pdb
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore.Utility/obj/Debug/net7.0/BookStore.Utility.csproj.AssemblyReference.cache
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore.Utility/obj/Debug/net7.0/BookStore.Utility.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore.Utility/obj/Debug/net7.0/BookStore.Utility.AssemblyInfoInputs.cache
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore.Utility/obj/Debug/net7.0/BookStore.Utility.AssemblyInfo.cs
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore.Utility/obj/Debug/net7.0/BookStore.Utility.csproj.CoreCompileInputs.cache
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore.Utility/obj/Debug/net7.0/BookStore.Utility.dll
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore.Utility/obj/Debug/net7.0/refint/BookStore.Utility.dll
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore.Utility/obj/Debug/net7.0/BookStore.Utility.pdb
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore.Utility/obj/Debug/net7.0/ref/BookStore.Utility.dll

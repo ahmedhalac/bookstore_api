@@ -41,3 +41,9 @@
 /Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore_API/bin/Debug/net7.0/Npgsql.dll
 /Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore_API/bin/Debug/net7.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
 /Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore_API/bin/Debug/net7.0/System.CodeDom.dll
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore_API/bin/Debug/net7.0/BookStore.DataAccess.dll
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore_API/bin/Debug/net7.0/BookStore.Models.dll
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore_API/bin/Debug/net7.0/BookStore.Utility.dll
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore_API/bin/Debug/net7.0/BookStore.Models.pdb
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore_API/bin/Debug/net7.0/BookStore.DataAccess.pdb
+/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore_API/bin/Debug/net7.0/BookStore.Utility.pdb

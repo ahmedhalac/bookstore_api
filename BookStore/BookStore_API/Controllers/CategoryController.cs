@@ -1,4 +1,6 @@
-﻿using BookStore_API.Models;
+﻿
+using BookStore.DataAccess.Data;
+using BookStore.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,8 +9,8 @@ namespace BookStore_API.Controllers
 {
     public class CategoryController : BaseApiController
     {
-        private readonly Data.ApplicationDbContext _db;
-        public CategoryController(Data.ApplicationDbContext db)
+        private readonly ApplicationDbContext _db;
+        public CategoryController(ApplicationDbContext db)
         {
             _db = db;
         }
