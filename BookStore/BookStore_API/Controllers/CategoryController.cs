@@ -1,5 +1,7 @@
 ﻿
 using BookStore.DataAccess.Data;
+using BookStore.DataAccess.Repository;
+using BookStore.DataAccess.Repository.IRepository;
 using BookStore.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -9,24 +11,29 @@ namespace BookStore_API.Controllers
 {
     public class CategoryController : BaseApiController
     {
-        private readonly ApplicationDbContext _db;
-        public CategoryController(ApplicationDbContext db)
+        private readonly ICategoryRepository _categoryRepository;
+        public CategoryController(ICategoryRepository categoryRepository)
         {
-            _db = db;
+            _categoryRepository = categoryRepository;
         }
 
         // Get: api/GetCategory
         [HttpGet("GetCategories")]
         public async Task<ActionResult<List<Category>>> GetCategories()
         {
-            List<Category> categories = await _db.Categories.ToListAsync();
+            List<Category> categories = await _categoryRepository.GetAll();
             return Ok(categories);
         }
 
+        // Get: api/GetCategory/1
         [HttpGet("GetCategory/{id}")]
         public async Task<ActionResult<Category>> GetCategory(int id)
         {
-            var category = await _db.Categories.FindAsync(id);
+            var category = await _categoryRepository.Get(id);
+            if(category == null)
+            {
+                return NotFound();
+            }
             return Ok(category);
         }
 
@@ -34,31 +41,28 @@ namespace BookStore_API.Controllers
         [HttpPost("AddCategory")]
         public async Task<ActionResult<Category>> AddCategory(Category category)
         {
-            _db.Categories.Add(category);
-            await _db.SaveChangesAsync();
-            return CreatedAtAction("GetCategories", new { id = category.Id }, category);
+            var addedCategory = await _categoryRepository.Add(category);
+            return CreatedAtAction("GetCategories", new { id = addedCategory.Id }, addedCategory);
         }
 
         // Delete: api/DeleteCategory
         [HttpDelete("DeleteCategory")]
         public async Task<IActionResult> DeleteCategory([FromQuery] int id)
         {
-            var category = await _db.Categories.FindAsync(id);
+            var category = await _categoryRepository.Delete(id);
             if(category == null)
             {
                 return NotFound();
             }
 
-            _db.Categories.Remove(category);
-            await _db.SaveChangesAsync();
-
             return NoContent();
         }
 
+        // Put: api/UpdateCategory/1
         [HttpPut("UpdateCategory/{id}")]
         public async Task<IActionResult> UpdateCategory([FromBody] Category obj, int id)
         {
-            var category = await _db.Categories.FindAsync(id);
+            var category = await _categoryRepository.Get(id);
             if(category == null)
             {
                 return BadRequest();
@@ -67,8 +71,7 @@ namespace BookStore_API.Controllers
             category.Name = obj.Name;
             category.DisplayOrder = obj.DisplayOrder;
 
-            _db.Categories.Update(category);
-            await _db.SaveChangesAsync();
+            await _categoryRepository.Update(category);
 
             return NoContent();
         }
