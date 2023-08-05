@@ -1,10 +1,6 @@
-﻿
-using BookStore.DataAccess.Data;
-using BookStore.DataAccess.Repository;
-using BookStore.DataAccess.Repository.IRepository;
+﻿using BookStore.DataAccess.Repository.IRepository;
 using BookStore.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 
 namespace BookStore_API.Controllers
