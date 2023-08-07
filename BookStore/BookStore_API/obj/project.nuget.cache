@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "0znvJfcXSXWfLwAZYt9QIiBNvXudREMNYY0aQqdO3iLggiWvvylSYUnFvfSiOj7/mpzKQJE2hU02SW1ZF4npgg==",
+  "dgSpecHash": "8IQkTekEMv95zjoyBijDEWMjoOow5GouOXdCXNPcGWqqSFFdW0PYKKdTrcpEcykTE3SLKDbBYCWac2VOYKwTWA==",
   "success": true,
   "projectFilePath": "/Users/ahmedhalac/Projects/bookstore_api/BookStore/BookStore_API/BookStore_API.csproj",
   "expectedPackageFiles": [
+    "/Users/ahmedhalac/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
+    "/Users/ahmedhalac/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/Users/ahmedhalac/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/ahmedhalac/.nuget/packages/microsoft.aspnetcore.openapi/7.0.9/microsoft.aspnetcore.openapi.7.0.9.nupkg.sha512",
+    "/Users/ahmedhalac/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/ahmedhalac/.nuget/packages/microsoft.entityframeworkcore/7.0.9/microsoft.entityframeworkcore.7.0.9.nupkg.sha512",
     "/Users/ahmedhalac/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.9/microsoft.entityframeworkcore.abstractions.7.0.9.nupkg.sha512",
     "/Users/ahmedhalac/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.9/microsoft.entityframeworkcore.analyzers.7.0.9.nupkg.sha512",

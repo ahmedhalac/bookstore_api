@@ -1,5 +1,7 @@
-﻿using BookStore.DataAccess.Repository.IRepository;
+﻿using AutoMapper;
+using BookStore.DataAccess.Repository.IRepository;
 using BookStore.Models;
+using BookStore.Models.DTO;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -8,9 +10,12 @@ namespace BookStore_API.Controllers
     public class CategoryController : BaseApiController
     {
         private readonly ICategoryRepository _categoryRepository;
-        public CategoryController(ICategoryRepository categoryRepository)
+        private readonly IMapper _mapper;
+
+        public CategoryController(ICategoryRepository categoryRepository, IMapper mapper)
         {
             _categoryRepository = categoryRepository;
+            _mapper = mapper;
         }
 
         // Get: api/GetCategory
@@ -56,18 +61,17 @@ namespace BookStore_API.Controllers
 
         // Put: api/UpdateCategory/1
         [HttpPut("UpdateCategory/{id}")]
-        public async Task<IActionResult> UpdateCategory([FromBody] Category obj, int id)
+        public async Task<IActionResult> UpdateCategory([FromBody] CategoryDTO categoryDTO, int id)
         {
-            var category = await _categoryRepository.Get(id);
-            if(category == null)
+            var existingCategory = await _categoryRepository.Get(id);
+            if(existingCategory == null)
             {
-                return BadRequest();
+                return NotFound();
             }
 
-            category.Name = obj.Name;
-            category.DisplayOrder = obj.DisplayOrder;
+            _mapper.Map(categoryDTO, existingCategory);
 
-            await _categoryRepository.Update(category);
+            await _categoryRepository.Update(existingCategory);
 
             return NoContent();
         }
