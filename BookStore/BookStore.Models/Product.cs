@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BookStore.Models;
 
@@ -37,5 +38,9 @@ public class Product
     [Required]
     [Range(1, 10000)]
     public double Price100 { get; set; }
+
+    public int CategoryId { get; set; }
+
+    public string ImageUrl { get; set; }
 }
 
